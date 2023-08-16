@@ -18,7 +18,17 @@ int main()
     {
 	scanf("%d",(arr + i));
     }
-    int high1 = arr[0],high2 = arr[1];
+    int high1,high2;
+	if(arr[0] > arr[1])
+	{
+		high1 = arr[0];
+		high2 = arr[1];
+	}
+	else
+	{
+		high1 = arr[1];
+		high2 = arr[0];
+	}
     for(i = 0;i < n;i++)
     {
 	if(arr[i] > high1)
